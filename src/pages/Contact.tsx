@@ -7,6 +7,7 @@ import {
   FileText,
   ShieldCheck,
   ArrowRight,
+  Facebook,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -167,6 +168,35 @@ const Contact = () => {
                       </p>
                     </div>
                   </div>
+
+                  {/* Facebook Page */}
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61573635173576"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group/item flex items-start gap-4 cursor-pointer"
+                  >
+                    <div className="p-3 border border-blue-400/30 bg-blue-500/20 text-blue-400 rounded-lg shadow-[0_0_15px_rgba(59,130,246,0.3)] group-hover/item:scale-110 group-hover/item:border-blue-400/60 group-hover/item:shadow-[0_0_25px_rgba(59,130,246,0.5)] transition-all duration-300">
+                      <Facebook className="h-6 w-6 group-hover/item:drop-shadow-[0_0_10px_rgba(59,130,246,0.8)]" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-bold mb-2 text-white group-hover/item:text-blue-200 transition-colors select-none">
+                        Facebook Page
+                      </h3>
+                      <span className="text-slate-300 group-hover/item:text-blue-200 transition-colors inline-flex items-center gap-2 select-none">
+                        <span className="break-all">
+                          Follow us on Facebook
+                        </span>
+                        <ArrowRight className="h-3 w-3 opacity-0 group-hover/item:opacity-100 transition-opacity duration-300 flex-shrink-0" />
+                      </span>
+                      <div className="mt-2 flex items-center gap-2 opacity-0 group-hover/item:opacity-100 transition-opacity duration-300">
+                        <ArrowRight className="h-3 w-3 text-blue-400" />
+                        <span className="text-xs text-blue-400">
+                          Visit our page
+                        </span>
+                      </div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>

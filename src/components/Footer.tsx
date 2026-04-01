@@ -250,7 +250,7 @@ const Footer = () => {
                   },
                   {
                     icon: Facebook,
-                    href: "#",
+                    href: "https://www.facebook.com/profile.php?id=61573635173576",
                     label: "Facebook",
                     color: "blue",
                   },
