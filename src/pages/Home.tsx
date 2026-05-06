@@ -769,14 +769,13 @@ const Home = () => {
               }`}
               style={{ transitionDelay: "500ms" }}
             >
-                <div className="absolute inset-0 bg-cyan-500/20 rounded-full blur-xl opacity-0 group-hover/link:opacity-100 transition-opacity duration-300" />
-              </Link>
+              <div className="absolute inset-0 bg-cyan-500/20 rounded-full blur-xl opacity-0 group-hover/link:opacity-100 transition-opacity duration-300" />
             </div>
           </div>
-        </div>
 
-        {/* Bottom neon border glow */}
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-400/50 via-purple-400/50 to-transparent" />
+          {/* Bottom neon border glow */}
+          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-400/50 via-purple-400/50 to-transparent" />
+        </div>
       </section>
 
       {/* Explore Our Collections - Immersive Showcase */}
@@ -2656,15 +2655,9 @@ const Home = () => {
                     company. Company documents and verification materials are
                     available upon request.
                   </p>
-                    </span>
-                    <ArrowRight className="h-4 w-4 relative z-10 transition-transform group-hover/link:translate-x-2 group-hover/link:scale-125" />
-                  </Link>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
-      </section>
+      </div>
 
       <style>{`
         @keyframes gradient-shift {
@@ -3056,6 +3049,8 @@ const Home = () => {
           animation: orb-float-hero-2 18s ease-in-out infinite;
         }
       `}</style>
+    </div>
+    </section>
     </div>
   );
 };
