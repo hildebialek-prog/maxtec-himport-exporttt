@@ -305,7 +305,6 @@ const Footer = () => {
                   title: "Information",
                   links: [
                     { label: "About Us", href: "/about" },
-                    { label: "Company Details", href: "/compliance" },
                     { label: "Policies", href: "/policies" },
                     { label: "Contact", href: "/contact" },
                   ],
@@ -314,7 +313,6 @@ const Footer = () => {
                   title: "Resources",
                   links: [
                     { label: "Partner Portal", href: "#" },
-                    { label: "Documentation", href: "/compliance" },
                     { label: "Lookbook", href: "#" },
                     { label: "Support", href: "#" },
                   ],
@@ -438,19 +436,6 @@ const Footer = () => {
                     </div>
                   </a>
                 </div>
-                <Link
-                  to="/compliance"
-                  className="group/link relative mt-6 inline-flex items-center gap-2 text-sm font-bold text-cyan-300 hover:text-cyan-200 transition-all duration-300 hover:scale-105 cursor-pointer select-none"
-                  onClick={handleNavigate}
-                >
-                  {/* Glow effect */}
-                  <div className="absolute inset-0 bg-cyan-500/10 rounded-lg blur-lg opacity-0 group-hover/link:opacity-100 transition-opacity duration-300" />
-
-                  <span className="relative z-10 pointer-events-none">
-                    View Company Information
-                  </span>
-                  <ChevronRight className="h-4 w-4 relative z-10 transition-transform group-hover/link:translate-x-2 group-hover/link:scale-125 pointer-events-none" />
-                </Link>
               </div>
             </div>
 
@@ -546,12 +531,6 @@ const Footer = () => {
               className="hover:text-cyan-300 transition-colors duration-300"
             >
               Privacy
-            </Link>
-            <Link
-              to="/compliance"
-              className="hover:text-cyan-300 transition-colors duration-300"
-            >
-              Compliance
             </Link>
           </div>
         </div>

@@ -8,7 +8,6 @@ import TrustBar from "@/components/TrustBar";
 import Footer from "@/components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Compliance from "./pages/Compliance";
 import Contact from "./pages/Contact";
 import Policies from "./pages/Policies";
 import Category from "./pages/Category";
@@ -31,7 +30,6 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
-              <Route path="/compliance" element={<Compliance />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/policies" element={<Policies />} />
               <Route path="/products" element={<AllProducts />} />

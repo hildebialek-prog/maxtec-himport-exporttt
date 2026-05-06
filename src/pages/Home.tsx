@@ -87,7 +87,7 @@ const featuredCategoryCards: Array<{
     key: "accessories",
     name: "Sculpted Accessories",
     image:
-      "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=900&q=80",
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=900&q=80",
     link: "/category/accessories",
     gradient: "from-amber-500/30 via-orange-500/20 to-transparent",
     accentColor: "accent",
@@ -769,17 +769,6 @@ const Home = () => {
               }`}
               style={{ transitionDelay: "500ms" }}
             >
-              <Link
-                to="/compliance"
-                className="group/link relative inline-flex items-center gap-2 px-6 py-3 bg-slate-900/80 backdrop-blur-xl rounded-full border border-cyan-400/50 text-sm font-bold text-cyan-300 hover:text-white hover:border-cyan-400 transition-all duration-300 hover:scale-110 shadow-[0_0_30px_rgba(56,189,248,0.4)] hover:shadow-[0_0_50px_rgba(56,189,248,0.6)] whitespace-nowrap"
-              >
-                {/* Outer glow */}
-                <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 rounded-full blur-lg opacity-0 group-hover/link:opacity-60 transition-opacity duration-500" />
-
-                <span className="relative z-10 whitespace-nowrap">
-                  View Company Details
-                </span>
-                <ArrowRight className="h-4 w-4 relative z-10 transition-transform group-hover/link:translate-x-2 group-hover/link:scale-125 flex-shrink-0" />
                 <div className="absolute inset-0 bg-cyan-500/20 rounded-full blur-xl opacity-0 group-hover/link:opacity-100 transition-opacity duration-300" />
               </Link>
             </div>
@@ -2258,12 +2247,6 @@ const Home = () => {
                             <option value="tech" className="text-foreground">
                               Technology & Gadgets
                             </option>
-                            <option
-                              value="compliance"
-                              className="text-foreground"
-                            >
-                              Compliance & Documentation
-                            </option>
                           </select>
                           <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 h-5 w-5 text-white/40" />
                         </div>
@@ -2383,11 +2366,6 @@ const Home = () => {
                     desc: "Complete company profile, director registry, and business details",
                   },
                   {
-                    icon: Layers,
-                    title: "Compliance Documentation",
-                    desc: "Regulatory compliance and verification materials",
-                  },
-                  {
                     icon: ShieldCheck,
                     title: "Quality Assurance",
                     desc: "Professional standards and commitment to excellence",
@@ -2478,23 +2456,7 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="flex flex-wrap gap-4">
-                <Link to="/compliance">
-                  <Button
-                    size="lg"
-                    className="group relative overflow-hidden bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 px-8 py-5 text-base font-bold text-white shadow-[0_0_30px_rgba(56,189,248,0.4)] transition-all duration-500 hover:shadow-[0_0_50px_rgba(56,189,248,0.6)] hover:-translate-y-1 hover:scale-105"
-                  >
-                    {/* Outer glow */}
-                    <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 rounded-lg blur-lg opacity-0 group-hover:opacity-60 transition-opacity duration-500" />
-
-                    <span className="relative z-10 flex items-center gap-2">
-                      View Company Details
-                      <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-2 group-hover:scale-125" />
-                    </span>
-                    <span className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 animate-shine-sweep" />
-                  </Button>
-                </Link>
-                <Link
+              <Link
                   to="/contact"
                   className="group/link inline-flex items-center gap-2 rounded-2xl border border-cyan-400/30 bg-slate-900/80 backdrop-blur-xl px-5 py-4 text-sm font-bold text-cyan-300 hover:text-white hover:border-cyan-400 transition-all duration-300 hover:scale-105 shadow-[0_0_20px_rgba(56,189,248,0.2)] hover:shadow-[0_0_30px_rgba(56,189,248,0.4)]"
                 >
@@ -2544,13 +2506,6 @@ const Home = () => {
                       status: "Available",
                       accent: "cyan",
                       icon: FileSearch,
-                    },
-                    {
-                      label: "Compliance Documentation",
-                      code: "COMPLIANCE-MAXTECH",
-                      status: "Ready",
-                      accent: "purple",
-                      icon: Layers,
                     },
                     {
                       label: "Business Profile",
@@ -2701,15 +2656,6 @@ const Home = () => {
                     company. Company documents and verification materials are
                     available upon request.
                   </p>
-                  <Link
-                    to="/compliance"
-                    className="group/link inline-flex items-center gap-2 text-sm font-bold text-purple-300 hover:text-purple-200 transition-all duration-300 hover:scale-105"
-                  >
-                    {/* Glow effect */}
-                    <div className="absolute inset-0 bg-purple-500/10 rounded-lg blur-lg opacity-0 group-hover/link:opacity-100 transition-opacity duration-300" />
-
-                    <span className="relative z-10">
-                      View Company Information
                     </span>
                     <ArrowRight className="h-4 w-4 relative z-10 transition-transform group-hover/link:translate-x-2 group-hover/link:scale-125" />
                   </Link>

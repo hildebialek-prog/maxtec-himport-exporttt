@@ -1648,28 +1648,6 @@ export const products: Product[] = [
     },
   
     {
-      id: "acc-011",
-      name: "Étoile Pavé Bracelet",
-      category: "accessories",
-      image:
-        "https://s.alicdn.com/@sc04/kf/H3f326999ca12481fb69af11b4035a8440.jpg?avif=close&webp=close",
-      hoverImage:
-        "https://s.alicdn.com/@sc04/kf/Hc8a45b89be6843219cd244934d0aff2dJ.jpg?avif=close&webp=close",
-      imageGallery: [
-        "https://s.alicdn.com/@sc04/kf/Hdf4062a5ff134a079e4d241b8b628c0e4.jpg?avif=close&webp=close",
-        "https://s.alicdn.com/@sc04/kf/H1584f4dc9cc347848b3a5994b65f9fb8O.jpg?avif=close&webp=close",
-        "https://s.alicdn.com/@sc04/kf/H8387c27613a74f8d82108af53fe78c32G.jpg?avif=close&webp=close",
-        "https://s.alicdn.com/@sc04/kf/H5736272dfcc647949fdd7c80c1eb6f39o.jpg?avif=close&webp=close"
-      ],
-      shortDescription:
-        "Gold-plated pavé bracelet with micro-crystal inlays.",
-      fullDescription:
-        "The Étoile Bracelet features a delicate chain adorned with micro pavé crystals, giving it an understated yet radiant finish. Designed to layer beautifully with minimalist timepieces or wear as a standalone statement.",
-      rating: 4.9,
-      price: 230,
-      onSale: false
-    },
-    {
       id: "acc-012",
       name: "Lyria Foldable Storage Pouch",
       category: "accessories",
@@ -1985,26 +1963,6 @@ export const products: Product[] = [
       price: 28,
       onSale: true,
       salePrice: 24
-    },
-    {
-      id: "acc-028",
-      name: "PowerBank Portable Charger",
-      category: "accessories",
-      image: "https://s.alicdn.com/@sc04/kf/Ha7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2.jpg?avif=close&webp=close",
-      hoverImage: "https://s.alicdn.com/@sc04/kf/Hb8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3.jpg?avif=close&webp=close",
-      imageGallery: [
-        "https://s.alicdn.com/@sc04/kf/H2b6d37b16e864577b69eb58dc6f362764.jpg?avif=close&webp=close",
-        "https://s.alicdn.com/@sc04/kf/H2b6d37b16e864577b69eb58dc6f362764.jpg?avif=close&webp=close",
-        "https://s.alicdn.com/@sc04/kf/H59b27846b206411195116cf9634c2208K.jpg?avif=close&webp=close",
-        "https://s.alicdn.com/@sc04/kf/Hb55dbd8ad40042e5975e4eda9e75842dF.jpg?avif=close&webp=close"
-      ],
-      shortDescription: "High-capacity portable power bank with fast charging.",
-      fullDescription:
-        "PowerBank Portable Charger features 10000mAh capacity, dual USB ports, fast charging technology, and compact design. Includes LED battery indicator and safety protection features.",
-      rating: 4.8,
-      isNew: true,
-      price: 19,
-      onSale: false
     },
     {
       id: "acc-029",

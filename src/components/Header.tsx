@@ -662,7 +662,6 @@ const Header = () => {
               {/* Simple Links */}
               {[
                 { to: "/about", label: "ABOUT", color: "cyan" },
-                { to: "/compliance", label: "COMPLIANCE", color: "blue" },
                 { to: "/contact", label: "CONTACT", color: "purple" },
               ].map((link) => (
                 <NavLink
@@ -1081,7 +1080,6 @@ const Header = () => {
             {/* Other Links */}
             {[
               { to: "/about", label: "About" },
-              { to: "/compliance", label: "Compliance & Verification" },
               { to: "/contact", label: "Contact" },
             ].map((link) => (
               <Link

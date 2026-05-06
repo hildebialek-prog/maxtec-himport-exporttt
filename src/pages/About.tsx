@@ -173,7 +173,7 @@ const About = () => {
                 </div>
                 <div className="flex flex-wrap gap-4 mt-8">
                   <a
-                    href="/compliance"
+                    href="/contact"
                     className="group/btn relative inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 text-white px-6 py-3 text-sm font-bold transition-all duration-300 hover:scale-105 shadow-[0_0_30px_rgba(56,189,248,0.4)] hover:shadow-[0_0_50px_rgba(56,189,248,0.6)] cursor-pointer select-none"
                   >
                     {/* Glow effect */}
@@ -312,7 +312,7 @@ const About = () => {
             <div className="absolute -inset-1 bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-rose-500/20 rounded-[36px] blur-xl opacity-0 group-hover/image-card:opacity-100 transition-opacity duration-700" />
 
             <img
-              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80"
+              src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=900&q=80"
               alt="Hong Kong skyline"
               className="h-full w-full object-cover opacity-40 transition-opacity duration-500 group-hover/image-card:opacity-60"
             />
@@ -483,7 +483,7 @@ const About = () => {
               </div>
               <div className="flex flex-wrap gap-4 mt-6">
                 <a
-                  href="/compliance"
+                  href="/contact"
                   className="group/btn relative inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 text-white px-5 py-3 text-sm font-bold transition-all duration-300 hover:scale-105 shadow-[0_0_30px_rgba(56,189,248,0.4)] hover:shadow-[0_0_50px_rgba(56,189,248,0.6)] cursor-pointer select-none"
                 >
                   {/* Glow effect */}
