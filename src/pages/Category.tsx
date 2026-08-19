@@ -238,7 +238,7 @@ const Category = () => {
                 <img
                   src={heroSpotlight.image}
                   alt={heroSpotlight.name}
-                  className="h-64 w-full object-cover transition-transform duration-700 hover:scale-110"
+                  className="h-64 w-full object-contain object-center p-4 bg-muted/30 transition-transform duration-500"
                 />
                 <div className="p-6 space-y-4 bg-card/90 backdrop-blur-xl">
                   <div className="flex items-center gap-2 text-xs uppercase tracking-[0.35em] text-muted-foreground">
@@ -333,11 +333,11 @@ const Category = () => {
                   key={product.id}
                   className="flex gap-5 rounded-3xl border border-border bg-card p-4 text-foreground shadow-lg"
                 >
-                  <div className="w-40 rounded-2xl overflow-hidden">
+                  <div className="w-40 h-48 flex-shrink-0 rounded-2xl overflow-hidden bg-muted/30 flex items-center justify-center">
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="h-full w-full object-cover"
+                      className="h-full w-full object-contain object-center p-3"
                     />
                   </div>
                   <div className="flex-1">

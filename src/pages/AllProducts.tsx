@@ -494,7 +494,7 @@ const AllProducts = () => {
                     {/* Glow effect */}
                     <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 via-blue-500/20 to-purple-500/20 rounded-lg opacity-0 group-hover/product-wrapper:opacity-100 blur-xl transition-opacity duration-500 -z-10" />
                     
-                    <div className="relative bg-slate-900/90 backdrop-blur-xl border border-cyan-400/30 rounded-xl overflow-hidden shadow-lg group-hover/product-wrapper:shadow-2xl transition-all duration-500 group-hover/product-wrapper:scale-[1.02] group-hover/product-wrapper:-translate-y-1">
+                    <div className="all-products-card relative bg-slate-900/90 backdrop-blur-xl border border-cyan-400/30 rounded-xl overflow-hidden shadow-lg group-hover/product-wrapper:shadow-2xl transition-all duration-500 group-hover/product-wrapper:scale-[1.02] group-hover/product-wrapper:-translate-y-1">
                       <ProductCard
                         id={product.id}
                         name={product.name}
@@ -529,7 +529,7 @@ const AllProducts = () => {
                         <img
                           src={product.image}
                           alt={product.name}
-                          className="w-full h-full object-cover group-hover/product:scale-110 transition-transform duration-300"
+                          className="w-full h-full object-contain object-center p-2 bg-slate-950/40 transition-transform duration-300"
                         />
                         {product.isNew && (
                           <div className="absolute top-1 left-1 bg-cyan-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded shadow-lg">
@@ -595,6 +595,20 @@ const AllProducts = () => {
       </div>
 
       <style>{`
+        /* Keep every product image fully visible inside a consistent card frame.
+           object-contain prevents tall/wide product photos from being cropped. */
+        .all-products-card img {
+          width: 100% !important;
+          height: 100% !important;
+          object-fit: contain !important;
+          object-position: center !important;
+          transform: none !important;
+        }
+
+        .all-products-card img:hover {
+          transform: none !important;
+        }
+
         @keyframes fade-in {
           0% { opacity: 0; transform: translateY(20px); }
           100% { opacity: 1; transform: translateY(0); }

@@ -28,25 +28,28 @@ const ProductCard = ({
   hidePrice = false,
 }: ProductCardProps) => {
   return (
-    <Link to={`/product/${id}`} className="group">
-      <div className="product-card bg-card border border-border rounded-lg overflow-hidden">
+    <Link to={`/product/${id}`} className="group block h-full">
+      <div className="product-card bg-card border border-border rounded-lg overflow-hidden h-full">
         {/* Image Container */}
-        <div className="relative aspect-[3/4] overflow-hidden bg-muted">
+        <div className="relative aspect-[3/4] overflow-hidden bg-muted flex items-center justify-center">
           <img
             src={image}
             alt={name}
-            className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0"
+            className={`absolute inset-0 w-full h-full object-contain object-center p-2 transition-opacity duration-300 ${
+              hoverImage ? "group-hover:opacity-0" : "opacity-100"
+            }`}
           />
+
           {hoverImage && (
             <img
               src={hoverImage}
               alt={`${name} alternate view`}
-              className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              className="absolute inset-0 w-full h-full object-contain object-center p-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
             />
           )}
 
           {/* Badges */}
-          <div className="absolute top-3 left-3 flex flex-col gap-2">
+          <div className="absolute top-3 left-3 flex flex-col gap-2 z-10">
             {isNew && (
               <Badge className="bg-accent text-accent-foreground">NEW</Badge>
             )}
@@ -58,7 +61,7 @@ const ProductCard = ({
           </div>
 
           {/* Quick View */}
-          <div className="absolute inset-x-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+          <div className="absolute inset-x-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-10">
             <Button className="w-full rounded-none bg-primary/90 hover:bg-primary">
               QUICK VIEW
             </Button>
@@ -70,9 +73,11 @@ const ProductCard = ({
           <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">
             {category}
           </p>
+
           <h3 className="font-medium text-sm mb-2 line-clamp-2 group-hover:text-accent transition-colors">
             {name}
           </h3>
+
           {!hidePrice && (
             <div className="flex items-center gap-2">
               {onSale && salePrice ? (

@@ -262,7 +262,7 @@ const ProductDetail = () => {
                   <img
                     src={galleryImages[activeImageIndex]}
                     alt={product.name}
-                    className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                    className="h-full w-full object-contain object-center p-4 bg-black/20 transition-transform duration-500"
                   />
                   <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6">
                     <p className="text-sm uppercase tracking-[0.35em] text-white/70">
@@ -297,7 +297,7 @@ const ProductDetail = () => {
                       <img
                         src={image}
                         alt={`${product.name} view ${index + 1}`}
-                        className="h-full w-full object-cover"
+                        className="h-full w-full object-contain object-center p-1.5 bg-black/20"
                       />
                     </button>
                   ))}
